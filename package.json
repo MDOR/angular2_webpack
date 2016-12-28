@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start-dev": "webpack-dev-server --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,7 @@
   },
   "homepage": "https://github.com/MDOR/angular2_webpack#readme",
   "dependencies": {
+    "@angular/common": "^2.4.1",
     "@angular/compiler": "^2.4.1",
     "@angular/core": "^2.4.1",
     "@angular/platform-browser": "^2.4.1",
@@ -49,5 +52,8 @@
     "typings": "^2.1.0",
     "webpack": "^1.14.0",
     "webpack-dev-server": "^1.16.2"
+  },
+  "peerDependencies": {
+    "rxjs": "5.0.1"
   }
 }
